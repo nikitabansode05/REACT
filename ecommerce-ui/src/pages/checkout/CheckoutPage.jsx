@@ -1,0 +1,11 @@
+
+
+function CheckoutPage() {
+  return (
+    <div className="App">
+     
+    </div>
+  );
+}
+
+export default CheckoutPage;
