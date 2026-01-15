@@ -1,6 +1,6 @@
- import "./Dashboard.css";
+ import "./Design.css";
 
-function Dashboard() {
+function MentorData() {
 
   // 🔒 Hard-coded data (no API for now)
   const mentorData = {
@@ -10,14 +10,15 @@ function Dashboard() {
     learners: 86
   };
 
+    
   return (
-    <div className="dashboard-container">
+    <div className="MentorData-container">
 
-      <div className="dashboard-title">
-        🌼 Transflower Mentors | TFLAssessment Dashboard
+      <div className="MentorData-title">
+        🌼 Transflower Mentors | TFLAssessment MentorData
       </div>
 
-      <div className="dashboard-info">
+      <div className="MentorData-info">
         <div>
           <strong>Mentor:</strong> {mentorData.mentorName}
         </div>
@@ -26,7 +27,7 @@ function Dashboard() {
         </div>
       </div>
 
-      <div className="dashboard-stats">
+      <div className="MentorData-stats">
         <div>
           <strong>Active Cohorts:</strong> {mentorData.activeCohorts}
         </div>
@@ -39,4 +40,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default MentorData;
