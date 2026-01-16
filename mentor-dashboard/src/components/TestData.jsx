@@ -2,7 +2,7 @@ import "./Design.css";
 
 function TestData(){
 
-     const testData = {
+    const testData = {
         ActiveTest:6,
         PendingReview:12,
         SkillGap:18,
