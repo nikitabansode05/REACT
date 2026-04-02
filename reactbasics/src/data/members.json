@@ -1,0 +1,26 @@
+[
+    {
+        "imageurl":"images/nikita.jpg",
+        "id": 1,
+        "name": "Nikita Bansode",
+        "username": "nikita123",
+        "height": 150,
+        "weight": 50
+    },
+    {
+        "imageurl":"images/alia.jpg",
+        "id": 2,
+        "name": "Alia Bhatt",
+        "username": "ab123",
+        "height": 160,
+        "weight": 55
+    },
+    {
+        "imageurl":"images/donald.jpg",
+        "id": 3,
+        "name": "Donald Trump",
+        "username": "tatya123",
+        "height":165,
+        "weight":60
+    }
+]
