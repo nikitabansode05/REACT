@@ -7,7 +7,7 @@ import Counter from '../Counter';
 
 function CreateTeam() {
   //  const memberName=data;
-  const[count,setCount]=useState(2);
+  const[member,setMember]=useState(2);
 
   return (
     <Container className="mt-5">
@@ -37,14 +37,15 @@ function CreateTeam() {
 
         <Form.Floating className="mb-3">
         <p>Enter the number of members</p>
-        <p>{count}</p>
-        <Counter/>
+        <p>{member}</p>
+        <Counter count={member} setCount={setMember}/>
         </Form.Floating>
 
         <Form.Floating className="mb-3">
           <Form.Control id="username"
-                        type="text" />
-          <label>Enter username of members</label>
+                        type="text" 
+                        placeholder="username"/>
+          <label>Enter username of members</label>    {/* why does it floats only after i give the placeholder and without it,it doesnt work */}
         </Form.Floating>
 
         {/* <Form.Floating className="mb-3">

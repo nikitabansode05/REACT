@@ -1,37 +1,65 @@
+import {useState} from "react";
+
 const Register=()=>{
+    const[user,setUser]=useState({firstName:"Nikita",lastName:"Bansode",mobileNo:9000000000,email:"xyz@gmail.com",username:"nikitab123"})
+
+    const handleChange=(event)=>{
+        const {name,value}=event.target;
+        setUser({
+            ...user,
+            [name]:value
+        });
+    };
+
     return(
-        <form>
         <div>
-            <label>Enter First Name : </label>
+        <div>
+            <p>Enter First Name : </p>
             <input type="text"
-                   value="Nikita"
+                   name="firstName"
+                   value={user.firstName} onChange={handleChange}
             />
         </div>
 
         <div>
-            <label>Enter Last Name : </label>
+            <p>Enter Last Name : </p>
             <input type="text"
-                   value="Bansode"/>
+                   name="lastName"
+                   value={user.lastName}
+                   onChange={(event)=>setUser({...user, lastName: event.target.value})}/>    {/*Event Binding */}
         </div>
 
         <div>
-            <label>Enter Mobile Number : </label>
+            <p>Enter Mobile Number : </p>
             <input type="number"
-                   value={9000000000}/>
+                   name="mobileNo"
+                   value={user.mobileNo}
+                   onChange={handleChange}/>
         </div>
 
         <div>
-            <lable>Enter Email Id : </lable>
-            <input type="text"
-                   value="xyz@gmail.com"/>
+            <p>Enter Email Id : </p>
+            <input type="email"
+                   name="email"
+                   value={user.email}
+                   onChange={handleChange}/>
         </div>
 
         <div>
-            <label>Enter username : </label>
+            <p>Enter username : </p>
             <input type="text"
-                   value="xyz123"/>
+                   name="username"
+                   value={user.username}
+                   onChange={handleChange}/>
         </div>
-        </form>
+
+        <div>
+            <button onClick={()=>
+                console.log("User Registered")}>
+                Register
+            </button>
+        </div>
+        </div>
     );
 }
 export default Register;
