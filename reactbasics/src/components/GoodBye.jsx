@@ -7,7 +7,7 @@ const GoodBye=()=>{
     const navigate=useNavigate();
 
     const GoToHello=()=>{
-        navigate("/");
+        navigate("/hello");
     }
 
     return (

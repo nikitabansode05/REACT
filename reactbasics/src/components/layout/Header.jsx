@@ -1,4 +1,4 @@
-import {Link, Routes} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Header() {
   return (
@@ -23,7 +23,13 @@ function Header() {
                 <Link to="/count" className='nav-link'>Count</Link>
               </li>
               <li>
-                <Link to="register" className='nav-link'>Register</Link>
+                <Link to="/register" className='nav-link'>Register</Link>
+              </li>
+              <li>
+                <Link to="/hello" className='nav-link'>Hello</Link>
+              </li>
+              <li>
+                <Link to="/company" className='nav-link'>Company</Link>
               </li>
             </ul>
           </div>

@@ -7,6 +7,7 @@ import Counter from "../Counter";
 import GoodBye from "../GoodBye";
 import Hello from "../Hello";
 import Register from "../Register";
+import CompanyChange from "../CompanyChange";
 
 const Routing=()=>{
     return(
@@ -16,9 +17,10 @@ const Routing=()=>{
           <Route path="/create" element={<CreateTeam />} />
           <Route path="/show" element={<UserList />}/>
           <Route path="/count" element={<Counter />} />
-          <Route path="/" element={<Hello />}/>
+          <Route path="/hello" element={<Hello />}/>
           <Route path="/goodbye" element={<GoodBye/>}/>
           <Route path="/register" element={<Register/>}/>
+          <Route path="/company" element={<CompanyChange/>} />
         </Routes>
         </div>
     );
